@@ -104,13 +104,12 @@
         android:id="@+id/timeText"
         android:layout_width="179dp"
         android:layout_height="46dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="56dp"
         android:gravity="center"
+        android:onClick="start"
         android:text="Time:10"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/gridLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -126,4 +125,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gridLayout"
         app:layout_constraintVertical_bias="0.346" />
+
+    <TextView
+        android:id="@+id/restratText"
+        android:layout_width="153dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="60dp"
+        android:gravity="center"
+        android:onClick="restart"
+        android:text="Restrat"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/timeText"
+        tools:layout_editor_absoluteY="74dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
